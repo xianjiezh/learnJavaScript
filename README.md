@@ -1,0 +1,2 @@
+# learnJavaScript
+记录学JavaScript的时候需要写的一些东西
