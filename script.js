@@ -17,9 +17,10 @@ function fib(n){
         return 1
     }else if(n == 2){
         return 1
-    }else{
-        return fib(n-1)+fib(n-2)
     }
+    return fib(n-1)+fib(n-2)
 }
-//console.log(fib(7))
+// console.log(fib(7))
+// 递归的特点：1、找规律（return 公式）；2、找出口（已知条件）
+
 
