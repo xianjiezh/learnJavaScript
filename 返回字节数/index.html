@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 第一种方法
+        /*
+        
+        function bites(str) {
+            var count = 0
+            for(var i = 0;i < str.length;i++) {
+                if (str[i].charCodeAt() > 255)
+                count +=2
+                else{
+                    count ++
+                }
+            }
+            console.log(count)
+        }
+        bites('这是一个目标， 哈哈哈')
+    */
+    // 这是第二种方法
+    function bites(str) {
+        var count = str.length
+        for(var i = 0; i < str.length; i++) {
+            if (str[i].charCodeAt() >255){
+                count++
+            }
+        }
+        console.log(count)
+    }
+    bites('这是一堆乱七八糟的数字1654848648945614894')
+    </script>
+</body>
+</html>
