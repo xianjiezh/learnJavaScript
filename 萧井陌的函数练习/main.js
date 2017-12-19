@@ -39,11 +39,17 @@ function addTwo(){
 // console.log(addTwo())
 
 // 随机返回0或1
-function random01(){
-    var n = Math.floor(Math.random() + 0.5)
-    return n
+function random01(n){
+    var m = []
+    for (let i = 0; i < n; i++) {
+        var a = Math.floor(Math.random() + 0.5)
+        m.push(a)
+    }
+    
+
+    return m
 }
-console.log(random01())
+console.log(random01(10))
 
 
 
