@@ -38,6 +38,12 @@ function addTwo(){
 }
 // console.log(addTwo())
 
+// 随机返回0或1
+function random01(){
+    var n = Math.floor(Math.random() + 0.5)
+    return n
+}
+console.log(random01())
 
 
 
