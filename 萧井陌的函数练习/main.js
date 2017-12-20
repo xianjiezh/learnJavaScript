@@ -49,7 +49,17 @@ function random01(n){
 
     return m
 }
-console.log(random01(10))
+// console.log(random01(10))
 
-
+// 返回一个包含 0 ，9的随机array，长度为n
+function random09(n){
+    console.log('random09')
+    let arr = random01(n)
+    let arr2 = []
+    for (let i = 0; i < arr.length; i++) {
+        arr2.push(arr[i] * 9)
+    }
+    return arr2
+}
+log(random09(10))
 
