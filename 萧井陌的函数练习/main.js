@@ -51,6 +51,24 @@ function random01(n){
 }
 // console.log(random01(10))
 
+
+// 返回一个这样的数组，这里是n = 3的情况
+// [
+//     [0, 0, 1],
+//     [1, 0, 1],
+//     [0, 0, 0],
+// ]
+function randomSquere01(n){
+    var arr = []
+    for (let i = 0; i < n; i++) {
+        let arr2 = random01(n)
+        arr[i] = arr2
+    }
+    return arr
+}
+log(randomSquere01(5))
+
+
 // 返回一个包含 0 ，9的随机array，长度为n
 function random09(n){
     console.log('random09')
@@ -61,5 +79,5 @@ function random09(n){
     }
     return arr2
 }
-log(random09(10))
+// log(random09(10))
 
